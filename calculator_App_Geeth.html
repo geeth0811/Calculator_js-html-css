@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<!--Here we are refering another file name using href attribute, file should be located in same directory/folder-->
+		<link rel="stylesheet" type="text/css" href="calci_CSS_Geeth.css">
+		<title>Basic calculator</title>
+	</head>
+	<body>
+		<!--Here we are defining the background and calculator along with the output screen and history screen-->
+		<div id="background_page">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history_value"></p>
+					</div>
+					<div id="output">
+						<p id="output_value"></p>
+					</div>
+				</div>
+				<!--Here we are defining the basic buttons on calculator which we display for the user to select based on his requirement also we seperate buttons and operator by class attribute to use in scripting and CSS-->
+				<div id="keyboard">
+					<button class="operators" id="clear">C</button>
+					<button class="operators" id="backspace">CE</button>
+					<button class="operators" id="%">%</button>
+					<button class="operators" id="/">&#247;</button>
+					<button class="numbers" id="7">7</button>
+					<button class="numbers" id="8">8</button>
+					<button class="numbers" id="9">9</button>
+					<button class="operators" id="*">&times;</button>
+					<button class="numbers" id="4">4</button>
+					<button class="numbers" id="5">5</button>
+					<button class="numbers" id="6">6</button>
+					<button class="operators" id="-">-</button>
+					<button class="numbers" id="1">1</button>
+					<button class="numbers" id="2">2</button>
+					<button class="numbers" id="3">3</button>
+					<button class="operators" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="numbers" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operators" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<!--Here we are refering another file name using src attribute, file should be located in same directory/folder-->
+		<script src="calci_Script_Geeth.js"></script>
+	</body>
+</html>

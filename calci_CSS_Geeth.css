@@ -1,0 +1,104 @@
+/*Here we are defining the font family and the background color for the body*/
+body{
+	font-family: 'Times New Roman',sans-serif;
+	background-color: lightyellow;
+}
+/*Here we are defining the width, height and the margin for the car image which i have attached by url attribute
+(i have saved an image for background in same folder) also used linear gradient to make color trasition look good*/
+#background_page{
+	width: 1200px;
+	height: 560px;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(background_calci_image.jpg);
+	margin: 50px auto;	
+}
+/*Also here i have used the below attributes to make the calculator design*/
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*defining the height for result screen which is a combination of output and history screens*/
+#result{
+	height: 120px;
+}
+/*defining various style attributes for history screen*/
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+/*defining various style attributes for output screen*/
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+/*defining height style attributes for keyboard view this has all operators and number buttons*/
+#keyboard{
+	height: 400px;
+}
+/*defining various attributes for buttons on the keyboard*/
+.operators, .numbers, .empty{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 15px;
+}
+.numbers, .empty{
+	background-color: #eaedef;
+}
+.numbers, .operators{
+	cursor: pointer;
+}
+.operators:active, .numbers:active{
+	font-size: 13px;
+}
+.operators:focus, .numbers:focus, .empty:focus{
+	outline: 0;
+}
+/*defining various colors for few selected buttons on keyboard screen*/
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(1){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(2){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(3){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
